@@ -1,0 +1,29 @@
+module hostname {
+  namespace "http://com/example/hostname";
+  prefix hostname;
+
+  import tailf-ncs {
+    prefix ncs;
+  }
+
+  augment /ncs:services {
+    list hostname {
+      key device;
+
+      uses ncs:service-data;
+      ncs:servicepoint "hostname";
+
+      leaf hostname {
+        type string;
+      }
+
+      // may replace this with other ways of refering to the devices.
+      leaf device {
+        type leafref {
+          path "/ncs:devices/ncs:device/ncs:name";
+        }
+      }
+
+    }
+  }
+}
