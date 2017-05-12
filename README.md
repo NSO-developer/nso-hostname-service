@@ -1,6 +1,6 @@
-# hostname
+# nso-hostname-service
 ## Description
-An NSO service package for managing the hostname of a device.  This service service can be used standalone or as part of a [stack service](http://linktoNSOdocs/ncs.development.services.stacked_services.html "NSO Stack Service Documentation").
+A NSO service package for managing the hostname of a device.  This service service can be used standalone or as part of a [stack service](http://linktoNSOdocs/ncs.development.services.stacked_services.html "NSO Stack Service Documentation").
 ## Dependenies
 NSO 3.0 - Minimum Version
 ## Installation
